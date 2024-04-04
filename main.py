@@ -14,7 +14,7 @@ def function():
 
 def my_model_prediction():
     
-    model = pickle.load(open(r'C:\Users\vishn\OneDrive\Desktop\flask_frt_end\myLRmodel.pkl', "rb"))
+    model = pickle.load(open(r'myLRmodel.pkl', "rb"))
     
     
     data = request.form
