@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2 {
+    color: #333;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* So that width includes padding */
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #4cae4c;
+  }
+</style>
+</head>
+<body>
+
+<form action="/function_to_pull_data" method="post">
+  <h1>🌻 ✨ Welcome to Magical predictions ✨🌻</h1>
+  <h2>What is your Store's City Tier type? 🤔</h2>
+  <h2>Tell me Details of your Store's product to see magic 😎 !</h2>
+
+  <label for="Item_Weight">Item Weight:</label>
+  <input type="text" id="Item_Weight" name="Item_Weight"><br>
+
+  <label for="Item_Visibility">Item Visibility:</label>
+  <input type="text" id="Item_Visibility" name="Item_Visibility"><br>
+
+  <label for="Item_MRP">Item MRP:</label>
+  <input type="text" id="Item_MRP" name="Item_MRP"><br>
+
+  <label for="Outlet_Establishment_Year">Outlet Establishment Year:</label>
+  <input type="text" id="Outlet_Establishment_Year" name="Outlet_Establishment_Year"><br>
+
+  <label for="Item_Outlet_Sales">Outlet Sales:</label>
+  <input type="text" id="Item_Outlet_Sales" name="Item_Outlet_Sales"><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
