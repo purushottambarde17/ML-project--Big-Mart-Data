@@ -41,6 +41,6 @@ def my_model_prediction():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host = "0.0.0.0", debug=False, port=8080)
     
     #  Bigmart Store Location is in ==  {{predictions_result}}
